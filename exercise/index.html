@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+   <!-- Nav bars -->
+   <nav class="navbar navbar-expand-sm fixed-top bg-dark navbar-dark">
+    <!-- Navbar text-->
+    <span class="navbar-text">
+      Vending Machine
+    </span>
+  </nav>
+  <!-- main content-->
+  <div class="container"> 
+    <div class="wrapper">
+      <h1>Vending Machine</h1>
+      <div class="card-columns">
+        <div class="col-sm">
+          <p id="productLst"> </p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#insetCoin">Insert Coin</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disable" data-toggle="tab" href="#returnCoin">Return Coin</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane container active" id="insetCoin">
+        <br>
+        <button class="btn btn-outline-secondary" onclick="inSertCoin()">Insert Coin</button>
+
+        <br>
+        <p id="displayCoin"></p>
+        <br>
+        <p id="coin"></p>
+
+        <button class="btn btn-outline-secondary" onclick="selectProduct()">Selcet Product</button>
+        <button class="btn btn-outline-secondary" onclick="refundCoin()">Refund Coin</button>
+       </div>
+      <div class="tab-pane container" id="returnCoin">
+        
+         <br>
+        <p id="selection"></p>
+        <p id="refund"></p>
+        <p id="result"></p>
+
+       <!--  <button class="btn btn-outline-secondary" onclick="displayCoin()">Return Coin</button> -->
+     
+      
+
+      </div>
+    </div>
+
+  </div>
+</body>
+
+
+<script type="text/javascript" src="./app.js"></script>
+
+
+
+
+</html>
